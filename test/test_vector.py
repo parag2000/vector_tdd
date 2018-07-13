@@ -11,3 +11,7 @@ def test_dimensions():
 def test_norm():
     v = Vector([3,4])
     assert v.norm == 5
+
+def test_unit_vector ():
+    v = Vector([5,3,1,9,5])
+    assert v.unit_vector().norm == 1
