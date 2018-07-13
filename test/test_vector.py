@@ -15,3 +15,7 @@ def test_norm():
 def test_unit_vector ():
     v = Vector([5,3,1,9,5])
     assert v.unit_vector().norm == 1
+
+def test_scale():
+    v = Vector([1,2,3])
+    assert v.scale(3) == Vector([3,6,9])
